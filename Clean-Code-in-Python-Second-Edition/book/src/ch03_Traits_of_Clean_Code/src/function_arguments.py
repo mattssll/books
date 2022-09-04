@@ -17,9 +17,17 @@ def second_function(a, *arg, c):
     print(a, *arg c)
 
 
+def third_function(**kwargs):
+    """A function that can take any number of keyword arguments"""
+    print(kwargs)
+    print(kwargs)
+
+
 '''
 >>> first_function(1, c=10)
 1 10
 >>> second_function(1, 2, 3, 4, c=10)
 1 2 3 4 10
+>>> third_function(a=1, b=2, c=3)
+{'a': 1, 'b': 2, 'c': 3}
 '''

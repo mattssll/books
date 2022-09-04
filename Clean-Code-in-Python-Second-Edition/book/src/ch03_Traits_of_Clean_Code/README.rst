@@ -36,8 +36,8 @@ positional only arguments: added in py 3.8 - can only be passed by position, not
 keyword only arguments: added in py 3.8 - can only be passed by name, not by position, "*"  is used to separate them from the rest of the args (and "*args if we want to let pass more positional args)
 we should in 99.9% of the cases use keyword arguments as they have better readability
 Packing and Unpacking Values: *args, **kwargs - *args is 1d, **kwargs is a dict
-
-
+Orthogonality: the ability to combine different parts of the code in different ways (changing one do not affect the other)
+Two vectors are Orthogonals when they are independent of each other
 
 
 
