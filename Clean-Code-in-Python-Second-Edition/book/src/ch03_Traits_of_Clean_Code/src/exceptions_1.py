@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 class DataTransport:
-    """An example of an object handling exceptions of different levels."""
+    """An example of an object handling exceptions of different levels (bad)"""
 
     _RETRY_BACKOFF: int = 5
     _RETRY_TIMES: int = 3

@@ -8,7 +8,8 @@ from unittest import TestCase, main
 
 
 class TransactionalPolicy(collections.UserDict):
-    """Example of an incorrect use of inheritance."""
+    """Example of an incorrect use of inheritance.
+    Too many things coming from UserDict, best to use Composition"""
 
     def change_in_policy(self, customer_id, **new_policy_data):
         self[customer_id].update(**new_policy_data)

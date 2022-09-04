@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Clean-Code-in-Python-Second-Edition/book/src/ch03_Traits_of_Clean_Code/src"
+    ]
+}

@@ -1,6 +1,7 @@
 """Clean Code in Python - Chapter 3: General Traits of Good Code
 
 > Packing / unpacking
+Works for *args and **kwargs
 """
 from dataclasses import dataclass
 
@@ -31,3 +32,15 @@ def users_from_rows(dbrows) -> list:
 def users_from_rows2(dbrows) -> list:
     """Create ``User``s from DB rows."""
     return [User(*row) for row in dbrows]
+
+
+# Very simple examples of packing and unpacking
+"""
+>>> mylist = [1,2,3,4]
+>>> first, *rest = mylist
+first = 1, rest = [2, 3, 4]
+>>> *rest, last = mylist
+rest = [1, 2, 3], last = 4
+>>> first, *middle, rest = mylist
+first = 1, middle = [2, 3], last = 4
+"""

@@ -5,7 +5,8 @@
 
 
 class InternalDataError(Exception):
-    """An exception with the data of our domain problem."""
+    """An exception with the data of our domain problem.
+    Good because it also prints the original exception"""
 
 
 def process(data_dictionary, record_id):

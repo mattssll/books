@@ -9,6 +9,7 @@ from collections import defaultdict
 
 class CallCount:
     """
+    It counts the number of times a given key has been called in the dict.
     >>> cc = CallCount()
     >>> cc(1)
     1

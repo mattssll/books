@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 def connect_with_retry(
     connector: Connector, retry_n_times: int, retry_backoff: int = 5
 ):
-    """Tries to establish the connection of <connector> retrying
+    """Tries to establish the connection of <connector> retrying (good)
     <retry_n_times>, and waiting <retry_backoff> seconds between attempts.
 
     If it can connect, returns the connection object.

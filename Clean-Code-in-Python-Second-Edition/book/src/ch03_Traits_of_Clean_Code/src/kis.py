@@ -6,6 +6,7 @@
 
 class ComplicatedNamespace:
     """An convoluted example of initializing an object with some properties.
+    Instead of using a simple constructor, it uses a class method to validate the keys of **kwargs
 
     >>> cn = ComplicatedNamespace.init_with_data(
     ...    id_=42, user="root", location="127.0.0.1", extra="excluded"
